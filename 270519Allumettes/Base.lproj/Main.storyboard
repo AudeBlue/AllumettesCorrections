@@ -237,15 +237,18 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyg-uD-5HF">
-                                        <rect key="frame" x="622" y="41" width="30" height="30"/>
+                                        <rect key="frame" x="602" y="41" width="50" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="ETe-gs-9Ne"/>
+                                        </constraints>
                                         <state key="normal" title="Ok"/>
                                         <connections>
                                             <action selector="uibtn_ok:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cmH-DK-ntk"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Prendre entre 1 et 3 allumettes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6C-f2-fas">
-                                        <rect key="frame" x="69" y="46.5" width="530" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Prendre entre 1 et 3 allumettes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6C-f2-fas">
+                                        <rect key="frame" x="10" y="46.5" width="582" height="20.5"/>
                                         <color key="backgroundColor" red="0.99336475133895874" green="0.95890146493911743" blue="0.9617888331413269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -293,6 +296,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.98842677942992463" green="0.43555081186833222" blue="0.42629664713287702" alpha="0.070847602739726026" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="G6C-f2-fas" firstAttribute="leading" secondItem="LfQ-o7-YIP" secondAttribute="leading" constant="10" id="2iT-Jo-1aO"/>
+                                    <constraint firstItem="qyg-uD-5HF" firstAttribute="leading" secondItem="G6C-f2-fas" secondAttribute="trailing" constant="10" id="DXE-JJ-aQf"/>
                                     <constraint firstItem="qyg-uD-5HF" firstAttribute="top" secondItem="Abl-9z-AkW" secondAttribute="bottom" constant="2.5" id="EdI-Pk-ES1"/>
                                     <constraint firstItem="dkf-kJ-VjC" firstAttribute="top" secondItem="G6C-f2-fas" secondAttribute="bottom" constant="17" id="IN0-eX-qGQ"/>
                                     <constraint firstItem="G6C-f2-fas" firstAttribute="top" secondItem="Abl-9z-AkW" secondAttribute="bottom" constant="8" id="LHu-qP-DXC"/>

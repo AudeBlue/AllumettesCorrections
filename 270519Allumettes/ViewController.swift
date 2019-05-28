@@ -135,7 +135,7 @@ class ViewController: UIViewController {
             uilbl_debug.text = "\(matchesLeft)"
             
         } else if matchesLeft == 1 {
-            uilbl_TourPlayer.text = playerNumber == 1 ? "\(player1.name) a gagné" : "\(player2.name) a gagné"
+            uilbl_TourPlayer.text = playerNumber == 1 ? "\(player2.name) a gagné" : "\(player1.name) a gagné"
             uilbl_info.isHidden = true
             for bouton in uibtn_allMatches {
                 
@@ -175,7 +175,9 @@ class ViewController: UIViewController {
         matchesLeft = 20
         player1.name = ""
         player2.name = ""
+        uilbl_info.isHidden = false
         uilbl_info.text = "Debut Partie"
+        uilbl_TourPlayer.text = " Nouvelle Partie"
         
         uitxf_namePlayer.isHidden = false
         uibtn_confirmName.isHidden = false
