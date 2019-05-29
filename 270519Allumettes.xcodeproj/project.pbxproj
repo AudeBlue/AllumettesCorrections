@@ -62,11 +62,10 @@
 		5D32080C229BB5DD0040F224 /* 270519Allumettes */ = {
 			isa = PBXGroup;
 			children = (
+				5DB9297F229D7AE700412DFA /* model */,
 				5D32080D229BB5DD0040F224 /* AppDelegate.swift */,
 				5D32080F229BB5DD0040F224 /* ViewController.swift */,
-				5DB9297D229D5CC100412DFA /* Player.swift */,
 				5D137D81229BCAEE00D4FF9E /* ButtonCustomUIView.swift */,
-				5D137D7D229BC0FA00D4FF9E /* Game.swift */,
 				5D137D7F229BC13600D4FF9E /* Matches.swift */,
 				5D320811229BB5DD0040F224 /* Main.storyboard */,
 				5D320814229BB5E00040F224 /* Assets.xcassets */,
@@ -74,6 +73,15 @@
 				5D320819229BB5E00040F224 /* Info.plist */,
 			);
 			path = 270519Allumettes;
+			sourceTree = "<group>";
+		};
+		5DB9297F229D7AE700412DFA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5D137D7D229BC0FA00D4FF9E /* Game.swift */,
+				5DB9297D229D5CC100412DFA /* Player.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
